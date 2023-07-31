@@ -1,8 +1,10 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const mode = process.env.NODE_ENV;
+
 module.exports = {
-  mode: "development",
+  mode,
   entry: path.join(__dirname, "src", "index.tsx"),
   output: {
     path: path.join(__dirname, "dist"),

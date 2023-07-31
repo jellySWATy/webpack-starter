@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack serve --open"
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "cross-env NODE_ENV=development webpack serve --open"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +20,7 @@
     "@types/react": "^18.2.17",
     "@types/react-dom": "^18.2.7",
     "babel-loader": "^9.1.3",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
     "node-sass": "^9.0.0",
